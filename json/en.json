@@ -1,0 +1,121 @@
+[
+    {
+        "title": "Unlocking product insights with GS1 Digital Link",
+        "label": "Chapter #1",
+        "next": "Next",
+        "start": "Start",
+        "subchapters": [
+            {
+                "src": "../media/video/intro_C1S1.mp4",
+                "poster": "../media/img/intro_C1S1.jpg",
+                "info": "primo capitolo, storia 1",
+                "popup1": {
+                    "top": "25%",
+                    "left": "50%",
+                    "text": "<h4>at retailer warehouse</h4><img height='197px' width='552px' src='../media/img/popup_C1S1_1.jpg'><p>The warehouse receives an EDI message (DESADV) that shows what it is going to receive.</p><small><b>DESADV - Despatch Advice</b> is an EDI (Electronic Data Interchange) message containing all relevant product and shipment information, which are sent to trading partners before the shipment arrives.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p>Content of the DESADV received:</p><ol><li>List of products (GTINs - Global Trade Item Number)</li><li>Quantity for each GTIN</li><li>Batch</li><li>Expiry date.</li></ol></article></div><p>The warehouse now knows the details of the expected shipment.</p><small><b>GTIN</b> stands for <b>Global Trade Item Number</b> that can be used by a company to uniquely identify all of its trade items. GS1 defines trade items as products or services that are priced, ordered or invoiced at any point in the supply chain.</small><details><summary>benefits</summary><p>With GS1 standards: fast and effective processes (save time and money), also during the receiving at the warehouse.</p></details>"
+                },
+                "popup2": {
+                    "top": "50%",
+                    "left": "68%",
+                    "text": "<h4>AT retailer warehouse</h4><p>A truck arrives at the warehouse and the shipment is unloaded.</p><p>The shipment is received at the warehouse and it is matched with the DESADV.</p><img height='197px' width='552px' src='../media/img/popup_C1S1_2.jpg'><p>The shipment is moved into the warehouse so the replenishment is done.</p><details><summary>benefits</summary><p>All the information about the shipment (GTINs, batch, expiration date, ...) is in the computer system and helps managing the subsequent processes, such as retail store replenishment.</p></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C1S2.mp4",
+                "poster": "../media/img/intro_C1S2.jpg",
+                "info": "primo capitolo, storia 2",
+                "popup1": {
+                    "top": "50%",
+                    "left": "43%",
+                    "text": "<h4>AT retail store - the operator</h4><p>On the store operator’s tablet is shown the alert about the level of stock for sandwiches.</p><img height='197px' width='552px' src='../media/img/popup_C1S2_1.jpg'><p>The operator clicks on the replenishment button on the tablet and the shelf is filled up.</p><details><summary>benefits</summary><ol><li>Greater efficiency: speed, more automatic processes, cost reduction, ...</li><li>Stock expiry date helps to easily manage when and how much to replenish the shelf</li><li>Visibility across the supply chain.</li></ol></details>"
+                },
+                "popup2": {
+                    "top": "60%",
+                    "left": "20%",
+                    "text": "<h4>AT retail store - the operator</h4><p>The operator is checking the expiry date of the sandwiches on the shelf via a 2D scanner.</p><small><b>GS1 Digital Link</b> allows to access digital content such as certifications, instructions for use, product information, traceability information and more. It “web-enables” barcodes by providing a simple, standards-based structure for the data to be encoded.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p>GS1 Digital Link structure <strong>https://gs1.eu/01/09506000134376/10/ABC123?17=251231</strong> where:</p><ul><li>GTIN = 09506000134376</li><li>Batch = ABC123</li><li>Expiry date = December the 31st, 2025.</li></ul></article></div><p>Some expiring sandwiches are found.</p><details><summary>benefits</summary><p>Thanks to GS1 Digital Link:</p><ol><li>More effective replenishment and stock management</li><li>More frequent and quicker checks, without errors</li><li>Automatic FEFO (First Expired First Out) shelf management</li><li>Shop reduces miss-scanning failures</li><li>Shop avoids expired products on the shelf (thanks to automatic AIDC check performed by the shop operator)</li><li>No need to relabel (=saving costs).</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "21%",
+                    "left": "65%",
+                    "text": "<h4>AT retail store - the operator</h4><p>The sandwiches are now moved in the <em>sustainable choice</em> sector of the shelf.</p><img height='197px' width='552px' src='../media/img/popup_C1S2_3.jpg'><details><summary>benefits</summary><ol><li>GS1 standards support the connection with sustainable consumption</li><li>No need for the consumer to lean at the back of the shelf to find the longest expiry date possible (LIFO - Last In First Out)</li><li>More sustainable choices and money saving in choosing products close to the expiry date.</li></ol></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C1S3.mp4",
+                "poster": "../media/img/intro_C1S3.jpg",
+                "info": "primo capitolo, storia 3",
+                "popup1": {
+                    "top": "15%",
+                    "left": "40%",
+                    "text": "<h4>AT retail store - the consumer</h4><p>The consumer takes a sandwich from the sustainable choice sector and looks for information on the product. She takes her smartphone and brings it closer to the QR code (that has inside a GS1 Digital Link) on the product. </p><img height='197px' width='552px' src='../media/img/popup_C1S3_1.jpg'><small>Sandwich GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/ABC123?17=251231</b> </small><p>The consumer consults the product information.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p><b>Product information:</b> </p><ul><li><b>ingredients</b> </li><li><b>allergens</b> </li><li><b>manufacturing video</b> </li><li><b>other products from the brand</b> </li></ul></article></div><details><summary>benefits</summary><p>GS1 Digital Link:</p><ol><li>For the manufacturer it means being able to directly communicate with the customers and engage with them, via a dedicated channel, enabled by the GS1 DL. They receive product information, cross-selling suggestions…</li><li>Enables the brand owner to reward consumers that buy their product (e.g. discount coupons). In that way they can build loyalty to their brand and keep the consumer in the brand's universe.</li></ol></details>"
+                },
+                "popup2": {
+                    "top": "70%",
+                    "left": "31%",
+                    "text": "<h4>AT RETAIL STORE - THE CHECKOUT POINT OF SALE (POS)</h4><p>The consumer scans a sandwich at the self check-out POS.</p><img height='197px' width='552px' src='../media/img/popup_C1S3_2.jpg'><small>Sandwich GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/ABC123?17=251231</b> </small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_cassa.svg'></figure><article><p>Expiry date approaching - discount -50% </p></article></div><p>The POS system recognizes the sandwich and its shelf life, the expiry date is approaching so the related discount is applied.</p><p>The consumer scans a soup at the self check-out POS.</p><small>Soup GS1 Digital Link: <b>https://gs1.eu/01/ 09506000134383/10/STU789?17=240831</b> </small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_cassa.svg'></figure><article><p>Product not sellable</p></article></div><p>The POS system recognizes the soup and its shelf life. The product is expired so the system blocks the sale.</p><details><summary>benefits</summary><p>GS1 Digital Link:</p><ol><li>Safety for the consumer</li><li>Shop avoids expired products on the shelf (thanks to automatic AIDC - check performed by the software cash till)</li><li>Automatic discount at the cash till.</li></ol></details>"
+                }
+            }
+        ]
+    },
+    {
+        "title": "GS1 standards enabling consumer safety and more",
+        "label": "Chapter #2",
+        "subchapters": [
+            {
+                "src": "../media/video/intro_C2S1.mp4",
+                "poster": "../media/img/intro_C2S1.jpg",
+                "info": "secondo capitolo, storia 1",
+                "popup1": {
+                    "top": "19%",
+                    "left": "31%",
+                    "text": "<h4>AT RETAIL STORE/DISTRIBUTION CENTRE - NON CONFORMITY</h4><p>The store receives an alert about a non-conformity on a product received by the Distribution Centre (DC). </p><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Urgent message from Distribution Centre.</b> </p><p><b>Non-confomity.</b> </p></article></div><div class='card'><p style='padding-left: 0;'>There is a non-conformity on the GTIN + batch</p></div>"
+                },
+                "popup2": {
+                    "top": "50%",
+                    "left": "69%",
+                    "text": "<h4>flashback AT manufacturer - non conformity</h4><p>The manufacturer found a non-conformity on a product shipped to the Distribution Centre, thanks to EPCIS, and sent an alert.</p><small><b>EPCIS - Electronic Product Code Information Services</b> is GS1's flagship data sharing standard for enabling visibility, within organisations as well as across an entire supply chain of trading partners and other stakeholders.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>EPCIS log:</b> </p><ul><li><b>What</b> </li><li><b>Where</b> </li><li><b>When</b> </li><li><b>Why</b> </li><li><b>How</b> </li></ul></article></div><img height='197px' width='552px' src='../media/img/maps_C2S1_2.jpg'><img height='197px' width='552px' src='../media/img/popup_alertB.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Urgent message from manufacturer.</b> </p><p><b>Non-conformity.</b> </p></article></div><details><summary>benefits</summary><ol><li>Improved inventory visibility: batch recalls are simplified for all the stakeholders</li><li>Visibility across supply chain, from the manufacturer to the consumer (thanks to the 2D barcode)</li><li>Stock management efficiency.</li></ol></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C2S2.mp4",
+                "poster": "../media/img/intro_C2S2.jpg",
+                "info": "secondo capitolo, storia 2",
+                "popup1": {
+                    "top": "15%",
+                    "left": "36%",
+                    "text": "<h4>AT DISTRIBUTION CENTRE/RETAIL STORE - NON CONFORMITY</h4><p>The Distribution Centre, thanks to EPCIS, sends an alert to the store.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p><b>EPCIS log:</b> </p><ul><li><b>What</b> </li><li><b>Where</b> </li><li><b>When</b> </li><li><b>Why</b> </li><li><b>How</b> </li></ul></article></div><img height='197px' width='552px' src='../media/img/maps_C2S2_1.jpg'><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Urgent message from Distribution Centre.</b> </p><p><b>Non conformity.</b> </p></article></div><details><summary>benefits</summary><p>Efficient traceability: GS1 standards enable efficient traceability throughout the supply chain, allowing for swift identification and containment of product safety issues.</p></details>"
+                },
+                "popup2": {
+                    "top": "30%",
+                    "left": "71%",
+                    "text": "<h4>AT retail store - non conformity</h4><p>The store receives the non-conformity alert and it blocks the product selling.</p><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Non-conformity.</b> </p><p><b>Block the product selling.</b> </p></article></div><details><summary>benefits</summary><ol><li>Taking care of the consumer=loyalty and trustworthiness</li><li>Limiting the damage for the retailer’s sales</li><li>Limiting the brand’s reputation damage</li><li>Limiting sector damaging.</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "37%",
+                    "left": "14%",
+                    "text": "<p><h4>AT retail store - non conformity</h4><p>The operator via the 2D scanner looks on the shelf for the affected products</p><img height='197px' width='552px' src='../media/img/popup_C2S2_3.jpg'><small>Affected product GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/DCE456?17=260131</b> </small><p>The affected products are found.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>Products with non-conformity.</b> </p></article></div><p>The affected products are removed from the shelf.</p><p>The operator searches the boxes of the non-compliant product from the store room of the shop.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>Recall affected boxes from the store room.</b> </p></article></div><p>The affected boxes of non-conformant products are removed from the store room.</p><p>The store operator displays the alert note in the store, then he selects the <em>loyalty program users</em> from the tablet.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>Send alert to the loyalty program users.</b> </p></article></div><details><summary>benefits</summary><ol><li>Transparency and trust: by leveraging GS1 standards, retailers can demonstrate transparency and uphold consumer trust by communicating openly about product recalls and safety measures.</li><li>Consumer empowerment: GS1 standards empower consumers to verify product safety and make informed purchasing decisions through accessible information provided via QR codes powered by GS1.</li></ol></details></p>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C2S3.mp4",
+                "poster": "../media/img/intro_C2S3.jpg",
+                "info": "secondo capitolo, storia 3",
+                "popup1": {
+                    "top": "18%",
+                    "left": "28%",
+                    "text": "<h4>AT retail store - non conformity</h4><p>A consumer scans the sandwich with the retailer app: the alert notifies about the non-conformity.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_1.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Retailer app.<br>Sandwich:</p><ul><li>GTIN 09506000134376</li><li>Batch DCE456</li></ul><p><b>Non-conformity<br>Please return it to the store.</b> </p></article></div><div class='card'><p class='padding-left: 0px'>The non-conformity notification can be just an alert/advice, for instance the need to boil the product or the contamination with a specific allergen.</p></div><p>The consumer returns the non-compliant product to the store operator.</p><details><summary>benefits</summary><p>Improved inventory visibility: batch recalls are simplified for all the stakeholders.</p></details>"
+                },
+                "popup2": {
+                    "top": "23%",
+                    "left": "61%",
+                    "text": "<h4>The consumer - non conformity</h4><p>Another consumer scans via his smartphone camera the same product: he is redirected to the manufacturer page with the alerts on the non-compliant batch.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_2.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Manufacturer website.<br>Sandwich:</p><ul><li>GTIN 09506000134376</li><li>Batch DCE456</li></ul><p><b>Non-conformity<br>Please return it to the store.</b> </p></article></div><div class='card'><p class='padding-left: 0px'>In the manufacturer web page there are other sections to communicate directly with the consumer, such as “rate the product”.</p></div><p>The consumer returns the non-compliant product to the store operator.</p><details><summary>benefits</summary><ol><li>Visibility across supply chain, from the manufacturer to the consumer</li><li>2D barcodes do not mean necessarily more complication, things can be done simply and beneficially: if the manufacturer uses only the GTIN, then the label can still be pre-printed. If other information (i.e. batch, exp date, …) is needed in the 2D barcode, then the manufacturer has the possibility to use the additional opportunities 2D brings. The migration can start lightly with minimum investment and then increase, taking advantage of more benefits (cross-selling tips, ...) via GS1 Digital Link.</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "72%",
+                    "left": "70%",
+                    "text": "<h4>AT consumer’s home</h4><p>The user brings the smartphone close to the QR code (with a GS1 Digital Link inside it) on the readyto-eat salad.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_3.jpg'><small>Salad GS1 Digital Link <b>https://gs1.eu/01/ 09506000134369/10/MNO463?17=260430</b> </small><p>On the smartphone appears a scrollable web page.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Product information</p><ul><li><b>Packaging Composition:</b> plastic package, biodegradable wood disposable cutlery</li><li><b>Recycling:</b> plastic dustbin + waste bin</li><li><b>Deposit Return Scheme program:</b> available</li></ul></article></div><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><b>DRS program: available</b> <p>You can return the packaging here.</p></article></div><img height='197px' width='552px' src='../media/img/maps_C2S3_3.jpg'><div class='card'><p style='padding-left: 0px;'>To activate the Deposit Return Scheme program, the GTIN is needed.</p></div><details><summary>benefits</summary><p>GS1 standards support the connection with sustainable behavior.</p></details><p>The consumer goes to the specific store for disposal and disposes the salad package.</p><div class='card'><p style='padding-left: 0px;'>To dispose the package scan the GTIN.</p></div><p>She receives a coupon to be spent in the store.</p><details class='bg-green'><summary>learn more</summary><ul><li>DESADV and GS1 EDI: <a href='https://www.gs1.org/standards/barcodes/ean-upc' target='_blank'>https://www.gs1.org/standards/barcodes/ean-upc</a></li><li>GTIN: <a href='https://www.gs1.org/standards/id-keys/gtin' target='_blank'>https://www.gs1.org/standards/id-keys/gtin</a></li><li>GS1 Digital Link: <a href='https://www.gs1.org/standards/gs1-digital-link' target='_blank'>https://www.gs1.org/standards/gs1-digital-link</a></li><li>EPCIS: <a href='https://www.gs1.org/standards/epcis' target='_blank'>https://www.gs1.org/standards/epcis</a></li></ul></details>"
+                }
+            }
+        ]
+    }
+]

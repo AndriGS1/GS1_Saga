@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metas for Google Serp -->
+    <title>GS1 - ECN</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+
+    <!-- styling -->
+    <link rel="stylesheet" href="../style/style.min.css">
+</head>
+
+<body>
+    <header class="box-full">
+        <div>
+            <h1 class="quick-top">
+                <a href="./ecn-en.html" title="homepage" aria-label="go to our studio homepage">
+                    <img width="108px" height="57px" src="../media/svg/logo_is.svg" alt="official gs1 logotype">
+                </a>
+            </h1>
+
+            <a href="./ecn.html" class="quick-right b-pill flag">
+                <img width="28px" height="28px" src="../media/svg/flag_is.svg" alt="language icon">
+                <img width="28px" height="28px" src="../media/svg/flag_en.svg" alt="English language icon">
+            </a>
+        </div>
+    </header>
+
+    <main class="box-content">
+        <div>
+            <span id="tutorial">
+                <button id="skip" class="b-round from-right" onclick="skip()"><p>Next</p><i class="arroww"></i></button>
+            </span>
+            
+            <figure class="videobox quick-left">
+                <video src="../media/video/intro.mp4" autoplay loop muted playsinline disablePictureInPicture
+                    title="collaborative network flat illustration"></video>
+            </figure>
+
+            <!-- pop-up "+" sopra il video -->
+            <div id="popup-area" class="flush">
+                <section>
+                    <div class="popup-wrap">
+                        <input type="checkbox" id="popOne" name="popOne" class="d-none" />
+
+                        <label for="popOne" class="plus-btn b-pill">
+                            <b>1</b>
+
+                            <!-- tooltip -->
+                            <small class="tooltip bg-white b-round">Read additional content</small>
+                        </label>
+
+                        <div class="box-text popup">
+                            <section class="b-round bg-white">
+                                <label for="popOne" class="popup-close">
+                                    <i class="x"></i>
+                                </label>
+
+                                <article class="popup-text">
+                                    <!-- area testo popup popolata tramite javascript -->
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="popup-wrap">
+                        <input type="checkbox" id="popTwo" name="popTwo" class="d-none" />
+
+                        <label for="popTwo" class="plus-btn b-pill">
+                            <b>2</b>
+
+                            <!-- tooltip -->
+                            <small class="tooltip bg-white b-round">In sequential order</small>
+                        </label>
+
+                        <div class="box-text popup">
+                            <section class="b-round bg-white">
+                                <label for="popTwo" class="popup-close">
+                                    <i class="x"></i>
+                                </label>
+
+                                <article class="popup-text">
+                                    <!-- area testo popup popolata tramite javascript -->
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="popup-wrap">
+                        <input type="checkbox" id="popThree" name="popThree" class="d-none" />
+
+                        <label for="popThree" class="plus-btn b-pill">
+                            <b>3</b>
+                        </label>
+
+                        <div class="box-text popup">
+                            <section class="b-round bg-white">
+                                <label for="popThree" class="popup-close">
+                                    <i class="x"></i>
+                                </label>
+
+                                <article class="popup-text">
+                                    <!-- area testo popup popolata tramite javascript -->
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="opening">
+                <article>
+                    <div class="switch-block">
+                        <h3 class="switch switching">A GS1 story: efficiency, trust and safety in action</h3>
+                    </div>
+                    <div class="py switch-block">
+                        <p class="switch switching">An interactive and engaging story that shows how GS1 standards can help companies to leverage efficient processes and new opportunities throughout the supply chain.</p>
+                    </div>
+                    <div class="cta-wrap quick-bottom">
+                        <button class="bg-orange cta" onclick="start()"><i class="arrow"></i> <b>Start the
+                                experience</b></button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- subchapters controls -->
+            <nav class="box-small from-top">
+                <section>
+                    <small>Missed info? <a onclick="tutorial()">Restart
+                            tutorial</a></small>
+                    <div id="submenu" class="b-round bg-white">
+                        <!-- tab -->
+                        <span id="toggleTab"></span>
+
+                        <!-- tooltip -->
+                        <small class="tooltip bg-white b-round">Select a scene from the bar</small>
+
+                        <button class="b-round active" onclick="sub(0)">
+                            <p class="number">Scene 1</p>
+                        </button>
+                        <button class="b-round" onclick="sub(1)">
+                            <p class="number">Scene 2</p>
+                        </button>
+                        <button class="b-round" onclick="sub(2)">
+                            <p class="number">Scene 3</p>
+                        </button>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </main>
+
+    <aside class="box-small from-bottom">
+        <div>
+            <img loading="lazy" width="100px" height="100px" src="../media/svg/rotate.svg"
+                alt="icon rotate your phone for a better experience">
+            <article>
+                <p class="mb">Rotate your phone for a better experience</p>
+                <p>The experience is designed to work better in portrait orientation.<br>Rotate your phone to
+                    continue browsing.</p>
+            </article>
+        </div>
+    </aside>
+
+    <footer id="chapters" class="box-small invisible from-bottom">
+        <div class="b-round bg-orange py">
+            <!-- tooltip -->
+            <small class="tooltip bg-white b-round">Click on the arrows to change chapter</small>
+
+            <!-- chapters controls -->
+            <button id="prev" class="px" onclick="prev()"><i class="sx-arrow"></i></button>
+
+            <article class="chap-text">
+                <small>
+                    <!-- label by javascript -->
+                </small>
+
+                <div class="switch-block">
+                    <h4 id="title" class="switch">
+                        <!-- area titolo capitoli by javascript -->
+                    </h4>
+                </div>
+                <figure id="dots">
+                    <!-- dots navigation by javascript -->
+                </figure>
+            </article>
+
+            <button id="next" class="px" onclick="next()"><i class="arrow"></i></button>
+        </div>
+    </footer> 
+
+    <!-- script -->
+    <script defer src="../script/global.js" type="text/javascript"></script>
+</body>
+
+</html>

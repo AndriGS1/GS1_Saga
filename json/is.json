@@ -1,0 +1,121 @@
+[
+    {
+        "title": "Aðgengi að vöruupplýsingum með GS1 Digital Link",
+        "label": "Kafli 1",
+        "next": "Næsta",
+        "start": "Byrja",
+        "subchapters": [
+            {
+                "src": "../media/video/intro_C1S1.mp4",
+                "poster": "../media/img/intro_C1S1.jpg",
+                "info": "primo capitolo, storia 1",
+                "popup1": {
+                    "top": "25%",
+                    "left": "50%",
+                    "text": "<h4>Í VÖRUHÚSI SMÁSALANS</h4><img height='197px' width='552px' src='../media/img/popup_C1S1_1.jpg'><p>Vöruhúsið fær EDI skeyti (DESADV) sem sýnir hvaða vörureiga að berast.</p><small><b>DESADV - Despatch Advice </b>eru EDI (rafraen skeytaskipti) skeyti sem innihalda allar viðeigandi upplýsingar um vörur og sendingar og eru sendar viðskiptaaðilum áður en sendingin kemur.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p>Innihald DESADV sem hefur borist:</p><ol><li>Listi af vörum (GTINs - Global Trade Item Number)</li><li>Magn af hverju GTIN</li><li>Lotunúmer</li><li>Best fyrir dagsetning.</li></ol></article></div><p>Vöruhúsið hefur nú nákvæmar upplýsingar um væntanlega sendingu.</p><small><b>GTIN </b>stendur fyrir <b>Global Trade Item Number, </b>sem fyrirtæki getur notað til að auðkenna allar vörur sínar. GS1 skilgreinir vörur sem þær vörur eða þjónustu sem eru verðlagðar, pantaðar eða reikningsfærðar á einhverjum tímapunkti í aðfangakeðjunni.</small><details><summary>Ávinningur</summary><p>Með GS1 stöðlum: hröð og skilvirk vinnsla (sparar tíma og peninga), einnig við móttöku í vöruhúsi.</p></details>"
+                },
+                "popup2": {
+                    "top": "50%",
+                    "left": "68%",
+                    "text": "<h4>Í VÖRUHÚSI SMÁSALANS</h4><p>Flutningabíll kemur í vöruhúsið og sendingin er affermd.</p><p>Sendingin er móttekin í vöruhúsinu og hún er borin við DESADV skeytið.</p><img height='197px' width='552px' src='../media/img/popup_C1S1_2.jpg'><p>Sendingin er flutt inn í vöruhúsið svo hægt sé að fylla á birgðir.</p><details><summary>Ávinningur</summary><p>Allar upplýsingar um sendinguna (GTIN-númer, lotunúmer, best fyrir dagsetningar osfrv.) eru í tölvukerfinu og auðvelda stjórnun síðari ferla, svo sem áfyllingu birgða í búðum.</p></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C1S2.mp4",
+                "poster": "../media/img/intro_C1S2.jpg",
+                "info": "primo capitolo, storia 2",
+                "popup1": {
+                    "top": "50%",
+                    "left": "43%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN - REKSTRARAÐILI</h4><p>Á spjaldtölvu rekstraraðila verslunarinnar er sýnd viðvörun um birgðastöðu á samlokum.</p><img height='197px' width='552px' src='../media/img/popup_C1S2_1.jpg'><p>Rekstraraðilinn smellir á áfyllingarhnappinn á spjaldtölvunni og hillan er fyllt af vörum.</p><details><summary>Ávinningur</summary><ol><li>Meiri skilvirkni: Hraði, fleiri sjálfvirkir ferlar, kostnaðarlækkun....</li><li>Gildistími birgða hjálpar til við að stjórna hvenær og hversu mikið á að fylla á hilluna</li><li>Sýnileiki yfir alla aðfangakeðjuna.</li></ol></details>"
+                },
+                "popup2": {
+                    "top": "60%",
+                    "left": "20%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN - REKSTRARAÐILI</h4><p>Rekstraraðilinn er að athuga gildistíma samlokanna í hillunni með 2D skanna.</p><small><b>GS1 Digital Link </b>gerir kleift að fá aðgang að stafrænum upplýsingum eins og vottunum, notkunarleiðbeiningum, vörulýsingum, rekjanleika upplýsingum og fleiru. Það „vefvænir“ strikamerki með því að veita einfalda, staðlaða uppbyggingu fyrir gögnin sem á að kóða í strikamerki.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p>Uppbygging GS1 Digital Link <strong>https://gs1.eu/01/09506000134376/10/ABC123?17=251231 </strong>þar sem:</p><ul><li>GTIN=09506000134376</li><li>Lota=ABC123</li><li>Fyrningardasetning=31. desember 2025</li></ul></article></div><p>Nokkrar samlokur sem eru að renna út finnast.</p><details><summary>Ávinningur</summary><p>Þökk sé GS1 Digital Link:</p><ol><li>Skilvirkari áfylling og birgðastjórnun</li><li>Tíðari og hraðari athuganir, án villna</li><li>Sjálfvirk FEFO (fyrst útrunnið, fyrst út) hillustjórnun</li><li>Verslun minnkar villur við skönnun</li><li>Verslun forðast að hafa útrunnar vörur á hillunni (þökk sé sjálfvirkri AIDC athugun sem er framkvæmd af rekstraraðila)</li><li>Engin þörf á endurmerkingu (=sparar kostnað).</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "21%",
+                    "left": "65%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN - REKSTRARAÐILI</h4><p>Samlokurnar eru nú í hluta hillunnar fyrir sjálfbærar vörur.</p><img height='197px' width='552px' src='../media/img/popup_C1S2_3.jpg'><details><summary>Ávinningur</summary><ol><li>GS1 staðlar styðja tengingu við sjálfbæra neyslu.</li><li>Neytandinn þarf ekki lengur að teygja sig aftast á hillunni til að finna vörur með lengsta gildistíma (LIFO - Síðast inn, fyrst út).</li><li>Sjálfbærari valkosti og sparnaður við val á vörum sem eru að renna út.</li></ol></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C1S3.mp4",
+                "poster": "../media/img/intro_C1S3.jpg",
+                "info": "primo capitolo, storia 3",
+                "popup1": {
+                    "top": "15%",
+                    "left": "40%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN - NEYTANDINN</h4><p>Neytandinn tekur samloku úr sjálfbærum hluta hillunnar og leitar að upplýsingum um vöruna. Hún tekur snjallsímann sinn og færir hann nær QR kóðanum (sem inniheldur GS1 Digital Link) á vörunni.</p><img height='197px' width='552px' src='../media/img/popup_C1S3_1.jpg'><small>Samloka GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/ABC123?17=251231</b></small><p>Neytandinn skoðar vöruupplýsingarnar.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p><b>Vöruupplýsingar:</b></p><ul><li><b>Innihaldsefni</b></li><li><b>Ofnæmisvaldar</b></li><li><b>Framleiðslumyndband</b></li><li><b>Aðrar vörur frá vörumerkinu</b></li></ul></article></div><details><summary>Ávinningur</summary><p>GS1 Digital Link:</p><ol><li>Fyrir framleiðandann þýðir þetta að hann getur haft beint samband við viðskiptavini og átt í samskiptum við þá í gegnum sérsniðinn vettvang sem GS1 Digital Link gerir mögulegan. Þeir fá vöruupplýsingar, tillögur um viðbótarsölu o.s.frv.</li><li>Gefur eiganda vörumerkisins kost á að verðlauna neytendur sem kaupa vöruna (t.d. með afsláttarmiðum). Þannig geta þeir byggt upp hollustu við vörumerkið og haldið neytendum innan vörumerkisins.</li></ol></details>"
+                },
+                "popup2": {
+                    "top": "70%",
+                    "left": "31%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN - AFGREIÐSLUKASSI</h4><p>Neytandinn skannar samloku við sjálfsafgreiðslukassann.</p><img height='197px' width='552px' src='../media/img/popup_C1S3_2.jpg'><small>Samloka GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/ABC123?17=251231</b></small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_cassa.svg'></figure><article><p>Gildistími að renna út - afsláttur -50% </p></article></div><p>Sjálfsafgreiðslukerfið þekkir samlokuna og gildistíma hennar; þar sem gildistíminn er að renna út, er viðeigandi afsláttur veittur.</p><p>Neytandinn skannar súpu við sjálfsafgreiðslukassann.</p><small>Súpa GS1 Digital Link: <b>https://gs1.eu/01/09506000134383/10/STU789?17=240831</b></small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_cassa.svg'></figure><article><p>Varan er ekki seljanleg</p></article></div><p>Sjálfsafgreiðslukerfið þekkir súpuna og gildistíma hennar. Þar sem varan er útrunnin, lokar kerfið fyrir sölu hennar.</p><details><summary>Ávinningur</summary><p>GS1 Digital Link:</p><ol><li>Öryggi fyrir neytandann</li><li>Verslun forðast útrunnar vörur á hillunni (þökk sé sjálfvirkri AIDC athugun sem framkvæmd er í hugbúnaðinum í kassakerfinu)</li><li>Sjálfvirkur afsláttur við kassann.</li></ol></details>"
+                }
+            }
+        ]
+    },
+    {
+        "title": "S1 staðlar sem stuðla að öryggi neytenda o.fl.",
+        "label": "Kafli 2",
+        "subchapters": [
+            {
+                "src": "../media/video/intro_C2S1.mp4",
+                "poster": "../media/img/intro_C2S1.jpg",
+                "info": "secondo capitolo, storia 1",
+                "popup1": {
+                    "top": "19%",
+                    "left": "31%",
+                    "text": "<h4>Í SMÁSÖLUVERSLUN/DREIFINFGARMIÐSTÖÐ - FRÁVIK</h4><p>Verslunin fær viðvörun um frávik í vöru sem móttekin var frá dreifingarmiðstöð. </p><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Mikilvæg skilaboð frá dreifingarmiðstöð.</b></p><p><b>Frávik.</b></p></article></div><div class='card'><p style='padding-left: 0;'>Það er frávik á GTIN + lotunúmeri</p></div>"
+                },
+                "popup2": {
+                    "top": "50%",
+                    "left": "69%",
+                    "text": "<h4>AFTURHVARF TIL FRAMLEIÐANDA - FRÁVIK</h4><p>Framleiðandinn fann frávik í vöru sem send var til dreifingarmiðstöðvar, þökk sé EPCIS, og sendi viðvörun.</p><small><b>EPCIS - Electronic Product Code Information Services </b>er helsti gagnamiðlunar staðall GS1 sem gerir sýnileika mögulegan, bæði innan fyrirtækja og yfir alla aðfangakeðju viðskiptaaðila og annarra hagsmunaaðila.</small><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>EPCIS skráning:</b></p><ul><li><b>Hvað</b></li><li><b>Hvar</b></li><li><b>Hvenær</b></li><li><b>Hvers vegan</b></li><li><b>Hvernig</b></li></ul></article></div><img height='197px' width='552px' src='../media/img/maps_C2S1_2.jpg'><img height='197px' width='552px' src='../media/img/popup_alertB.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Mikilvæg skilaboð frá framleiðanda.</b></p><p><b>Frávik.</b></p></article></div><details><summary>Ávinningur</summary><ol><li>Aukinn sýnileiki birgða: lotuköllun er einfölduð fyrir alla hagsmunaaðila</li><li>Sýnileiki yfir aðfangakeðjuna, frá framleiðanda til neytanda (þökk sé 2D strikamerkinu)</li><li>Skilvirk birgðastjórnun.</li></ol></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C2S2.mp4",
+                "poster": "../media/img/intro_C2S2.jpg",
+                "info": "secondo capitolo, storia 2",
+                "popup1": {
+                    "top": "15%",
+                    "left": "36%",
+                    "text": "<h4>Í DREIFINFGARMIÐSTÖÐ/ SMÁSÖLUVERSLUN - FRÁVIK</h4><p>Dreifingarmiðstöðin sendir viðvörun til verslunarinnar þökk sé EPCIS.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p><b>EPCIS skráning:</b></p><ul><li><b>Hvað</b></li><li><b>Hvar</b></li><li><b>Hvenær</b></li><li><b>Hvers vegan</b></li><li><b>Hvernig</b></li></ul></article></div><img height='197px' width='552px' src='../media/img/maps_C2S2_1.jpg'><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Mikilvæg skilaboð frá dreifingarmiðstöð.</b></p><p><b>Frávik.</b></p></article></div><details><summary>Ávinningur</summary><p>Skilvirkur rekjanleiki: GS1 staðlar gera skilvirkan rekjanleika mögulegan í gegnum alla aðfangakeðjuna, sem gerir kleift að bera kennsl á og bregðast hratt við vandamálum með vörur.</p></details>"
+                },
+                "popup2": {
+                    "top": "30%",
+                    "left": "71%",
+                    "text": "<h4>Í SMÁVÖRUVERSLUN - FRÁVIK</h4><p>Verslunin fær viðvörun um frávik og lokar fyrir sölu vörunnar.</p><img height='197px' width='552px' src='../media/img/popup_alert.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_desktop.svg'></figure><article><p><b>Frávik.</b></p><p><b>Loka fyrir sölu vörunnar.</b></p></article></div><details><summary>Ávinningur</summary><ol><li>Að hugsa um neytandann=hollusta og traust</li><li>Lágmarkar skaða á sölu smásalans</li><li>Lágmarkar skaða á orðspori vörumerkisins</li><li>Lágmarkar skaða á geiranum.</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "37%",
+                    "left": "14%",
+                    "text": "<h4>Í SMÁVÖRUVERSLUN - FRÁVIK</h4><p>Rekstraraðilinn leitar að viðkomandi vörum á hillunni með 2D skanna.</p><img height='197px' width='552px' src='../media/img/popup_C2S2_3.jpg'><small>Viðkomandi vara GS1 Digital Link <b>https://gs1.eu/01/09506000134376/10/DCE456?17=260131</b></small><p>Viðkomandi vörur finnast.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>Vörur með frávik.</b></p></article></div><p>Viðkomandi vörur eru fjarlægðar úr hillunni.</p><p>Rekstraraðilinn leitar að kössum með vörunni sem hefur frávik á lager verslunarinnar.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>Afturkalla viðkomandi kassa úr lagernum.</b></p></article></div><p>Viðkomandi kassar með vörum sem hafa frávik eru fjarlægðir af lagernum.</p><p>Rekstraraðili verslunar birtir viðvörun í versluninni og velur síðan <em>notendur úr vildarkerfinu </em>á spjaldtölvunni.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_tablet.svg'></figure><article><p><b>enda viðvörun til notanda vildarkerfisins.</b></p></article></div><details><summary>Ávinningur</summary><ol><li>Gagnsæi og traust: með því að nýta GS1 staðla geta smásalar sýnt fram á gagnsæi og haldið uppi trausti neytenda með opnum samskiptum um innköllun vara og öryggisráðstafanir.</li><li>Valdefling neytenda: GS1 staðlar veita neytendum vald til að sannreyna öryggi vara og taka upplýstar ákvarðanir við kaup með aðgengilegum upplýsingum í gegnum QR kóða frá GS1.</li></ol></details>"
+                }
+            },
+            {
+                "src": "../media/video/intro_C2S3.mp4",
+                "poster": "../media/img/intro_C2S3.jpg",
+                "info": "secondo capitolo, storia 3",
+                "popup1": {
+                    "top": "18%",
+                    "left": "28%",
+                    "text": "<h4>Í SMÁVÖRUVERSLUN - FRÁVIK</h4><p>Neytandi skannar samlokuna með forriti smásalans: viðvörun tilkynnir um frávikið.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_1.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Forrit smásalans.<br>Samloka:</p><ul><li>GTIN 09506000134376</li><li>Lota DCE456</li></ul><p><b>Frávik<br>Vinsamlegast skilaðu vörunni til rekstraraðila verslunarinnar.</b></p></article></div><div class='card'><p class='padding-left: 0px'>Tilkynningin um frávik getur verið bara viðvörun/ráðgjöf, til dæmis nauðsyn þess að sjóða vöruna eða að hún sé menguð með tilteknum ofnæmisvaldi.</p></div><p>Neytandinn skilar vörunni sem hefur frávik til rekstraraðila verslunarinnar.</p><details><summary>Ávinningur</summary><p>Aukinn sýnileiki birgða: lotuköllun er einfölduð fyrir alla hagsmunaaðila.</p></details>"
+                },
+                "popup2": {
+                    "top": "23%",
+                    "left": "61%",
+                    "text": "<h4>NEYTANDINN - FRÁVIK</h4><p>Annar neytandi skannar sömu vöru með myndavél snjallsímans: honum er vísað á heimasíðu framleiðanda með tilkynningum um lotuna sem hefur frávik.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_2.jpg'><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Heimasíða framleiðanda.<br>Samloka:</p><ul><li>GTIN 09506000134376</li><li>Lota DCE456</li></ul><p><b>Frávik<br>Vinsamlegast skilaðu henni í verslunina.</b></p></article></div><div class='card'><p class='padding-left: 0px'>Á heimasíðu framleiðanda eru aðrir staðir til að eiga beint samskipti við neytendur, til dæmis „gefa vörunni einkunn“.</p></div><p>Neytandinn skilar vörunni sem hefur frávik til rekstraraðila verslunarinnar.</p><details><summary>Ávinningur</summary><ol><li>Sýnileiki yfir aðfangakeðjuna, frá framleiðanda til neytanda</li><li>2D strikamerki þurfa ekki endilega að þýða meiri flækjur, hlutir geta verið gerðir einfaldlega og ávinningurinn nýttur: ef framleiðandi notar aðeins GTIN, þá er hægt að fyrirprenta merkimiðann. Ef aðrar upplýsingar (t.d. lotunúmer, gildistími, …) eru nauðsynlegar í 2D strikamerkinu, þá hefur framleiðandinn möguleika á að nýta þessi viðbótartækifæri sem 2D býður upp á.</li></ol></details>"
+                },
+                "popup3": {
+                    "top": "72%",
+                    "left": "70%",
+                    "text": "<h4>HEIMA HJÁ NEYTENDA</h4><p>Notandinn færir snjallsímann nær QR kóðanum (sem inniheldur GS1 Digital Link) á salatinu.</p><img height='197px' width='552px' src='../media/img/popup_C2S3_3.jpg'><small>Salat GS1 Digital Link <b>https://gs1.eu/01/09506000134369/10/MNO463?17=260430</b></small><p>Á snjallsímanum birtist vefsíða sem hægt er að fletta.</p><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><p>Vöruupplýsingar</p><ul><li><b>Samsetning umbúða: </b>plastumbúðir, niðurbrjótanleg einnota viðar hnífapör</li><li><b>Endurvinnsla: </b>Plast + ruslatunna</li><li><b>Skilagjaldakerfi: </b>í boði</li></ul></article></div><div class='card'><figure><img width='52px' height='52px' src='../media/svg/popup_phone.svg'></figure><article><b>Skilagjaldakerfi: í boði </b><p>Þú getur skilað umbúðunum hér.</p></article></div><img height='197px' width='552px' src='../media/img/maps_C2S3_3.jpg'><div class='card'><p style='padding-left: 0px;'>Til að virkja skilagjaldakerfið þarf GTIN.</p></div><details><summary>Ávinningur</summary><p>GS1 staðlar styðja tengingu við sjálfbæra hegðun.</p></details><p>Neytandinn fer í tiltekna verslun til að farga og losar sig við salatumbúðirnar.</p><div class='card'><p style='padding-left: 0px;'>Til að farga umbúðunum skannaðu GTIN.</p></div><p>Hún fær inneignarmiða sem hægt er að nota í versluninni.</p><details class='bg-green'><summary>Lærðu Meira</summary><ul><li>DESADV og GS1 EDI: <a href='https://www.gs1.org/standards/eancom' target='_blank'>https://www.gs1.org/standards/eancom</a></li><li>GTIN: <a href='https://www.gs1.org/standards/id-keys/gtin' target='_blank'>https://www.gs1.org/standards/id-keys/gtin</a></li><li>GS1 Digital Link: <a href='https://www.gs1.org/standards/gs1-digital-link' target='_blank'>https://www.gs1.org/standards/gs1-digital-link</a></li><li>EPCIS: <a href='https://www.gs1.org/standards/epcis' target='_blank'>https://www.gs1.org/standards/epcis</a></li></ul></details>"
+                }
+            }
+        ]
+    }
+]
