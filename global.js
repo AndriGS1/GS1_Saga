@@ -1,46 +1,41 @@
 /* --------------------v5.6 (GS1 Ísland)--------------------- */
-/* --------------------------------------------------------- */
-/* ------------- GRUNNSTILLINGAR & AÐGERÐIR --------------- */
-/* --------------------------------------------------------- */
-
 const $ = (el) => document.querySelector(el);
 const $$ = (el) => document.querySelectorAll(el);
 
-// Greinir hvort tæki sé snertitæki
 const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 addEventListener('dragstart', (e) => e.preventDefault());
 
-/* --------------------------------------------------------- */
-/* -------------------- SLÓÐA-STILLINGAR -------------------- */
-/* --------------------------------------------------------- */
-// HTML skrárnar eru í /is/, assets í rót (img, svg, video, json)
-const ROOT = "../";
+/* ---------- PATH HELPERS ---------- */
+const ROOT = "../"; // frá /is/ til rót
 
-// Lagar allar slóðir (../media/ → ../)
 function normalizePath(p) {
   if (!p) return p;
-  if (/^https?:\/\//i.test(p)) return p; // full slóð
+  if (/^https?:\/\//i.test(p)) return p;
   let q = String(p).replace(/^\.\//, '').replace(/^\/+/, '');
+  // fjarlægja leading ../
   q = q.replace(/^(\.\.\/)+/g, '');
-  q = q.replace(/^media\//, '');
+  // breyta media/ yfir í rótarmöppur
+  q = q.replace(/^media\/(svg|img|video)\//, (_, t) => `${t}/`);
   return ROOT + q;
 }
 
-// Lagar slóðir inni í HTML texta (í popupum o.s.frv.)
 function rewriteHtmlAssets(html) {
   if (!html) return html;
+  // media/svg|img|video -> svg|img|video + ROOT
   html = html.replace(
     /(src|href)=["'](?:\.\/|\/|..\/)?media\/(svg|img|video)\/([^"']+)["']/gi,
+    (_, attr, kind, rest) => `${attr}="${ROOT}${kind}/${rest}"`
+  );
+  // ef einhver setur beint svg/… eða img/… án ROOT
+  html = html.replace(
+    /(src|href)=["'](svg|img|video)\/([^"']+)["']/gi,
     (_, attr, kind, rest) => `${attr}="${ROOT}${kind}/${rest}"`
   );
   return html;
 }
 
-/* --------------------------------------------------------- */
-/* ------------------ LANDSCAPE / PORTRAIT ----------------- */
-/* --------------------------------------------------------- */
+/* ---------- ORIENTATION UI ---------- */
 const aside = $('aside');
-
 if (isTouch) {
   addEventListener('DOMContentLoaded', () => {
     if (window.innerHeight < window.innerWidth && window.innerWidth < 768) {
@@ -53,27 +48,22 @@ if (isTouch) {
   });
 }
 
-/* --------------------------------------------------------- */
-/* ------------------ HLEÐUR JSON EFNI ---------------------- */
-/* --------------------------------------------------------- */
+/* ---------- LOAD CONTENT ---------- */
 const language = document.documentElement.getAttribute('lang');
 let contents;
 let sceneTot;
 
 (async () => {
   try {
-    // hleður JSON úr /json/ möppu
-    const response = await fetch(`../json/${language}.json?${Date.now()}`);
+    const response = await fetch(`${ROOT}json/${language}.json?${Date.now()}`);
     contents = await response.json();
     sceneTot = contents.length;
   } catch (error) {
-    console.error('impossible að hlaða efni (JSON fannst ekki)', error);
+    console.error('impossible að hlaða efni (JSON fannst ekki):', error);
   }
 })();
 
-/* --------------------------------------------------------- */
-/* ------------------- FASTAR OG BREYTUR -------------------- */
-/* --------------------------------------------------------- */
+/* ---------- PAGE ELEMENTS ---------- */
 const tutorialArea = $('#tutorial');
 const chapters = $('#chapters');
 const subchapters = $('nav');
@@ -81,6 +71,7 @@ const tab = $('#toggleTab');
 const skipBtn = $('#skip');
 const label = $('.chap-text small');
 const title = $('#title');
+let activeBtn = $('.active');
 const prevBtn = $('#prev');
 const nextBtn = $('#next');
 const plusArea = $('#popup-area');
@@ -89,28 +80,24 @@ const popupsTxt = $$('#popup-area .popup-text');
 const video = $('video');
 const videoBox = $('.videobox');
 
+/* ---------- STATE ---------- */
 const timing = 1600;
 const switchTime = timing * 0.33;
 let scene = 0;
-let subScene = 0;
-let actualSub = 0;
+let subScene = 0; let actualSub = 0;
 let clickSkip = 0;
 
-/* --------------------------------------------------------- */
-/* --------------------- TUTORIAL --------------------------- */
-/* --------------------------------------------------------- */
+/* ---------- TUTORIAL ---------- */
 function tooltipOpen(el, direction) {
   if (el.classList.contains('toggle')) el.classList.remove('toggle');
   el.classList.remove(`${direction}`);
   el.style.zIndex = 999;
   el.style.pointerEvents = 'none';
 }
-
 function tooltipClose(el) {
   el.classList.add('toggle');
   el.style = '';
 }
-
 function tutorial() {
   tutorialArea.style.opacity = 1;
   tutorialArea.style.pointerEvents = 'auto';
@@ -118,7 +105,6 @@ function tutorial() {
   popupsBtn.forEach(btn => btn.classList.remove('pulse'));
   tooltipOpen(chapters, 'from-bottom');
 }
-
 function skip() {
   clickSkip++;
   if (clickSkip == 1) {
@@ -138,9 +124,7 @@ function skip() {
   }
 }
 
-/* --------------------------------------------------------- */
-/* --------------------- DYNAMIC TEXT ----------------------- */
-/* --------------------------------------------------------- */
+/* ---------- TEXT/POPUPS ---------- */
 function dynamicText() {
   label.innerText = contents[scene].label;
   title.innerText = contents[scene].title;
@@ -162,12 +146,11 @@ function dynamicText() {
   }, switchTime);
 }
 
-/* --------------------------------------------------------- */
-/* --------------------- START FUNCTION --------------------- */
-/* --------------------------------------------------------- */
+/* ---------- START ---------- */
 function start() {
   const opening = $('#opening');
   const tutorialViewed = localStorage.getItem('tutorialGs1');
+
   dynamicText();
 
   if (!tutorialViewed) {
@@ -208,18 +191,17 @@ function start() {
   localStorage.setItem('tutorialGs1', 'view');
 }
 
-/* --------------------------------------------------------- */
-/* ---------------- CHAPTERS / SUBCHAPTERS ------------------ */
-/* --------------------------------------------------------- */
+/* ---------- NAV ---------- */
 function subBtnHandler(i) {
   const subBtn = $$('nav button');
   plusArea.classList.add('flush');
+
   subBtn.forEach(btn => {
     btn.classList.remove('active');
     btn.disabled = true;
   });
 
-  const activeIndex = i !== undefined ? i : 0;
+  const activeIndex = (i !== undefined) ? i : 0;
   setTimeout(() => subBtn[activeIndex].classList.add('active'), 100);
 
   setTimeout(() => {
@@ -238,15 +220,18 @@ btnHandler();
 
 function changeContent(i) {
   videoBox.classList.remove('change', 'change-inverse');
-  subScene = i !== undefined ? i : 0;
+  subScene = (i !== undefined) ? i : 0;
+
   const dots = $$('.chap-text span');
   tab.style.left = `${subScene * 33.33}%`;
   dots.forEach(dot => dot.classList.remove('bg-white'));
   setTimeout(() => dots[scene].classList.add('bg-white'), 100);
+
   setTimeout(() => {
     const src = contents[scene].subchapters[subScene].src;
     video.src = normalizePath(src);
   }, switchTime);
+
   popupsTxt.forEach(popup => popup.scrollTop = 0);
 }
 
@@ -260,8 +245,10 @@ function chapterNavigation(increment) {
   actualSub = 0;
   changeContent();
   toggleSubmenu();
+
   title.classList.remove('switching');
   dynamicText();
+
   setTimeout(() => videoBox.classList.toggle(increment > 0 ? 'change' : 'change-inverse'), 100);
   subBtnHandler();
   btnHandler();
@@ -270,10 +257,7 @@ function chapterNavigation(increment) {
 function prev() { chapterNavigation(-1); }
 function next() { chapterNavigation(1); }
 
-/* --------------------------------------------------------- */
-/* --------------------- SUBCHAPTERS ------------------------ */
-/* --------------------------------------------------------- */
-let activeBtn = $('.active');
+/* ---------- SUB ---------- */
 if (activeBtn) activeBtn.disabled = true;
 
 function sub(i) {
