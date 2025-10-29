@@ -8,3 +8,20 @@
 @media screen and (max-width: 575px){
   #chapters .chap-text{ margin:0 48px; }
 }
+/* --- FIX: texti í appelsínugala boxinu (#chapters) --- */
+
+/* 1) gefa pláss fyrir örvarhnappa */
+#chapters > div { padding-left:72px; padding-right:72px; }
+
+/* 2) forðast background-clip klippingu á fyrsta staf */
+#chapters #title.switch{
+  background:none !important;          /* slekk á gradient-clip */
+  color:#fff !important;
+  -webkit-text-fill-color:#fff;        /* WebKit fallback */
+  padding-left:2px;                    /* örlítið “anti-clip” */
+}
+
+/* smærri skjáir: aðeins minna pláss fyrir hnappa */
+@media screen and (max-width:575px){
+  #chapters > div { padding-left:56px; padding-right:56px; }
+}
