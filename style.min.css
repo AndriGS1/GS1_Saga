@@ -25,3 +25,13 @@
 @media screen and (max-width:575px){
   #chapters > div { padding-left:56px; padding-right:56px; }
 }
+/* eldri viðbætur sem þú ert nú þegar með ... */
+
+/* --- FIX: textinn í appelsínugala glugganum brýtur línu á náttúrulegan hátt --- */
+#chapters .chap-text small,
+#chapters .chap-text h4,
+#chapters .chap-text p {
+  white-space: normal !important; /* leyfir línubrot */
+  text-align: center;             /* miðjar textann */
+  line-height: 1.3;               /* betra bil milli lína */
+}
