@@ -8,3 +8,11 @@
   color:#fff !important;
   -webkit-text-fill-color:#fff !important;
 }
+/* hnika aðeins fyrstu línu titilsins til hægri svo "G" verði ekki undir örinni */
+#chapters #title{
+  text-indent: 12px;         /* má fínstilla 8–14px eftir smekk */
+}
+
+@media screen and (max-width: 575px){
+  #chapters #title{ text-indent: 10px; }
+}
